@@ -1,0 +1,9 @@
+{"at":0,"kind":"domain","record":{"root":"/main","limit":30}}
+{"at":0,"kind":"domain","record":{"root":"/aux","limit":12}}
+{"at":1,"kind":"file","record":{"path":"/main/run","size":7,"text":"new"}}
+{"at":2,"kind":"file","record":{"path":"/aux/run","size":8,"text":"old"}}
+{"at":3,"kind":"open","record":{"path":"/aux/run","handle":"old-read"}}
+{"at":4,"kind":"rename","record":{"from":"/main/run","to":"/aux/run","replace":true}}
+{"at":5,"kind":"close","record":{"handle":"old-read"}}
+{"at":6,"kind":"rename","record":{"from":"/main/run","to":"/aux/run","replace":true}}
+{"at":7,"kind":"inspect","record":{"root":"/aux"}}

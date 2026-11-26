@@ -1,0 +1,14 @@
+[
+  "append",
+  "close",
+  "confirm",
+  "domain",
+  "file",
+  "inspect",
+  "link",
+  "mkdir",
+  "open",
+  "rename",
+  "restart",
+  "unlink"
+]

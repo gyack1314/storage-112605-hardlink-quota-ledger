@@ -1,0 +1,16 @@
+{"at":0,"kind":"domain","record":{"root":"/press","limit":24}}
+{"at":0,"kind":"domain","record":{"root":"/lab","limit":15}}
+{"at":1,"kind":"mkdir","record":{"path":"/press/jobs"}}
+{"at":2,"kind":"file","record":{"path":"/press/jobs/sample","size":9,"text":"coupon"}}
+{"at":3,"kind":"link","record":{"from":"/press/jobs/sample","to":"/press/keep"}}
+{"at":4,"kind":"open","record":{"path":"/press/jobs/sample","handle":"writer"}}
+{"at":5,"kind":"append","record":{"id":"extra","handle":"writer","max":8}}
+{"at":6,"kind":"rename","record":{"from":"/press/jobs","to":"/lab/jobs"}}
+{"at":7,"kind":"confirm","record":{"id":"extra","appended":4}}
+{"at":8,"kind":"rename","record":{"from":"/press/jobs","to":"/lab/jobs"}}
+{"at":9,"kind":"link","record":{"from":"/lab/jobs/sample","to":"/lab/final"}}
+{"at":10,"kind":"unlink","record":{"path":"/press/keep"}}
+{"at":11,"kind":"restart","record":{}}
+{"at":12,"kind":"inspect","record":{"root":"/press"}}
+{"at":13,"kind":"close","record":{"handle":"writer"}}
+{"at":14,"kind":"inspect","record":{"root":"/press"}}
